@@ -9,8 +9,16 @@ function App() {
 
     <Router>
       <div className="app">
-        <Header />
-        <Home />
+        <Switch>
+          <Route path="/checkout">
+            <Header />
+            <h1>I AM THE CHECKOUT PAGE</h1>
+          </Route>
+          <Route path="/">
+            <Header />
+            <Home />
+          </Route>
+        </Switch>
       </div>
     </Router>
   );
